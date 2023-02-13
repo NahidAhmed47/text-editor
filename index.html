@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwindcss link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DasyUi library -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Text Editor</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1
+        class="text-2xl md:text-4xl font-semibold text-center my-4 md:mt-6 md:mb-5 mx-3 md:mx-0"
+      >
+        Make your <span class="font-bold text-orange-600">Text</span> awesome
+      </h1>
+    </header>
+    <main>
+      <section class="max-w-4xl sm:mx-auto bg-stone-100 rounded-lg drop-shadow-md p-5 md:p-10">
+        <h2 class="text-1xl sm:text-2xl font-semibold">Title:</h2>
+        <input type="text" placeholder="Type here" class="input input-bordered input-secondary w-full w-full my-1 sm:my-3" />
+        <!-- Content section -->
+        <section>
+            <h2 class="text-1xl sm:text-2xl font-semibold py-1 sm:py-3">Content:</h2>
+            <div>
+                <div class="h-12 w-full bg-stone-300 rounded-t-md">
+
+                </div>
+                <div>
+                    <textarea class="w-full rounded-b-md" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>
