@@ -54,12 +54,12 @@
                       </div>
                     </div>
                     <div class="border w-fit">
-                      <input class="h-full w-10 sm:w-14 text-xs sm:text-base px-1 sm:px-2 font-semibold" type="number" name="" id="" placeholder="16">
+                      <input class="h-full pl-1 outline-none sm:w-14 text-xs sm:text-base  font-semibold" type="number" name="" id="text-size" min="10" placeholder="10px">
                     </div>
                     <div class="border w-fit ">
                       <select id="" class="h-full px-0 sm:px-1 text-xs sm:text-base font-semibold">
                         <option value="">Normal font</option>
-                        <option value="dog">Dog</option>
+                        <option value="dog" id="times-roman">Times New Roman</option>
                         <option value="cat">Cat</option>
                         <option value="hamster">Hamster</option>
                         <option value="parrot">Parrot</option>
@@ -68,32 +68,32 @@
                       </select>
                     </div>
                     <div class="flex justify-center items-center  bg-white border w-fit">
-                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                      <div id="align-left" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
                         <img class="w-2 sm:w-4" src="icons/align-left-solid.svg" alt="b-solid">
                       </div>
-                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                      <div id="align-center" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
                         <img class="w-2 sm:w-4" src="icons/align-center-solid.svg" alt="i-solid">
                       </div>
-                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                      <div id="align-right" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
                         <img class="w-2 sm:w-4" src="icons/align-right-solid.svg" alt="u-solid">
                       </div>
-                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                      <div id="align-justify" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
                         <img class="w-2 sm:w-4" src="icons/align-justify-solid.svg" alt="u-solid">
                       </div>
                     </div>
-                    <div class="flex border w-fit">
-                      <h4 class="text-xs sm:text-base font-bold text-[#810808] px-1">Ab</h4>
-                      <input class="h-full" type="color" id="head" name="head"
+                    <div class="flex border w-fit ">
+                      <h4 id="ab" class="text-xs sm:text-base font-bold text-[#810808] px-1">Ab</h4>
+                      <input class="h-full" type="color" id="text-color" name="head"
                        value="#810808">
                     </div>
                   </div>
                 </div>
                 <div>
-                    <textarea class="w-full rounded-b-md p-1 sm:px-2 sm:pt-1 outline-none	" name="" id="text-area" cols="30" rows="10"></textarea>
+                    <textarea class="w-full rounded-b-md p-1 sm:px-2 sm:pt-1 outline-none	min-h-[200px]" name="" id="text-area" cols="30" rows="1"></textarea>
                 </div>
             </div>
             <div class="flex justify-center sm:justify-start mt-3 sm:mt-1">
-              <button id="btn-copy" class="text-xs  sm:text-1xl font-bold py-1 sm:py-1 px-2 sm:px-5 bg-[rgb(240,0,184)] rounded text-white hover:bg-[rgb(220,0,240)]">Copy</button>
+              <button id="btn-copy" class="text-xs  sm:text-1xl font-bold py-1 sm:py-1 px-2 sm:px-5 bg-[rgb(240,0,184)] rounded text-white hover:bg-gray-500">Copy</button>
             </div>
         </section>
       </section>
@@ -101,7 +101,6 @@
 
     <!-- JS file link -->
     <script src="js/utilities.js"></script>
-    <script src="js/contant-area.js"></script>
     <script src="js/b-i-u-edit.js"></script>
     <script src="js/text-size.js"></script>
     <script src="js/font-family.js"></script>

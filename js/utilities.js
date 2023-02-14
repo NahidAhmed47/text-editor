@@ -1,5 +1,11 @@
-function getInputFieldText(inputId){
+function getInputFieldNumber(inputId){
     const inputField = document.getElementById(inputId);
-    const inputText = inputField.value;
-    return inputText;
+    const inputTextString = inputField.value;
+    const inputNumber = parseInt(inputTextString);
+    return inputNumber;
+}
+// Input field text styles function;
+function textAreaField(){
+    const contentField = document.getElementById('text-area');
+    return contentField;
 }
