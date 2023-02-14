@@ -26,7 +26,7 @@
     <main>
       <section class="max-w-4xl sm:mx-auto bg-stone-100 rounded-lg drop-shadow-md p-3 sm:p-10">
         <h2 class="text-1xl sm:text-2xl font-semibold">Title:</h2>
-        <input type="text" placeholder="Type here" class="input input-bordered input-secondary w-full my-1 sm:my-3" />
+        <input id="title-input" type="text" placeholder="Type here" class="input input-bordered input-secondary w-full my-1 sm:my-3" />
         <!-- Content section -->
         <section>
             <h2 class="text-1xl sm:text-2xl font-semibold py-1 sm:py-3">Content:</h2>
@@ -43,13 +43,13 @@
                 <div>
                   <div class="p-1 flex flex-wrap gap-1 sm:gap-3">
                     <div class="flex justify-center items-center flex-wrap  bg-white  border w-fit">
-                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                      <div id="bold-text" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
                         <img class="w-2 sm:w-3" src="icons/b-solid.svg" alt="b-solid">
                       </div>
-                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                      <div id="italic-text" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
                         <img class="w-2 sm:w-3" src="icons/italic-solid.svg" alt="i-solid">
                       </div>
-                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                      <div id="underline-text" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
                         <img class="w-2 sm:w-4" src="icons/underline-solid.svg" alt="u-solid">
                       </div>
                     </div>
@@ -89,11 +89,23 @@
                   </div>
                 </div>
                 <div>
-                    <textarea class="w-full rounded-b-md" name="" id="" cols="30" rows="10"></textarea>
+                    <textarea class="w-full rounded-b-md p-1 sm:px-2 sm:pt-1 outline-none	" name="" id="text-area" cols="30" rows="10"></textarea>
                 </div>
+            </div>
+            <div class="flex justify-center sm:justify-start mt-3 sm:mt-1">
+              <button id="btn-copy" class="text-xs  sm:text-1xl font-bold py-1 sm:py-1 px-2 sm:px-5 bg-[rgb(240,0,184)] rounded text-white hover:bg-[rgb(220,0,240)]">Copy</button>
             </div>
         </section>
       </section>
     </main>
+
+    <!-- JS file link -->
+    <script src="js/utilities.js"></script>
+    <script src="js/contant-area.js"></script>
+    <script src="js/b-i-u-edit.js"></script>
+    <script src="js/text-size.js"></script>
+    <script src="js/font-family.js"></script>
+    <script src="js/align-text.js"></script>
+    <script src="js/text-color.js"></script>
   </body>
 </html>
