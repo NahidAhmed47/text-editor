@@ -24,15 +24,69 @@
       </h1>
     </header>
     <main>
-      <section class="max-w-4xl sm:mx-auto bg-stone-100 rounded-lg drop-shadow-md p-5 md:p-10">
+      <section class="max-w-4xl sm:mx-auto bg-stone-100 rounded-lg drop-shadow-md p-3 sm:p-10">
         <h2 class="text-1xl sm:text-2xl font-semibold">Title:</h2>
-        <input type="text" placeholder="Type here" class="input input-bordered input-secondary w-full w-full my-1 sm:my-3" />
+        <input type="text" placeholder="Type here" class="input input-bordered input-secondary w-full my-1 sm:my-3" />
         <!-- Content section -->
         <section>
             <h2 class="text-1xl sm:text-2xl font-semibold py-1 sm:py-3">Content:</h2>
             <div>
-                <div class="h-12 w-full bg-stone-300 rounded-t-md">
-
+                <div class=" w-full bg-stone-200 rounded-t pl-1 sm:pl-2 py-1 flex gap-1 sm:gap-4">
+                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">File</p></a>
+                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">Edit</p></a>
+                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">View</p></a>
+                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">Insert</p></a>
+                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">Format</p></a>
+                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">Tools</p></a>
+                </div>
+                <!-- Editor div -->
+                <div>
+                  <div class="p-1 flex flex-wrap gap-1 sm:gap-3">
+                    <div class="flex justify-center items-center flex-wrap  bg-white  border w-fit">
+                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                        <img class="w-2 sm:w-3" src="icons/b-solid.svg" alt="b-solid">
+                      </div>
+                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                        <img class="w-2 sm:w-3" src="icons/italic-solid.svg" alt="i-solid">
+                      </div>
+                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                        <img class="w-2 sm:w-4" src="icons/underline-solid.svg" alt="u-solid">
+                      </div>
+                    </div>
+                    <div class="border w-fit">
+                      <input class="h-full w-10 sm:w-14 text-xs sm:text-base px-1 sm:px-2 font-semibold" type="number" name="" id="" placeholder="16">
+                    </div>
+                    <div class="border w-fit ">
+                      <select id="" class="h-full px-0 sm:px-1 text-xs sm:text-base font-semibold">
+                        <option value="">Normal font</option>
+                        <option value="dog">Dog</option>
+                        <option value="cat">Cat</option>
+                        <option value="hamster">Hamster</option>
+                        <option value="parrot">Parrot</option>
+                        <option value="spider">Spider</option>
+                        <option value="goldfish">Goldfish</option>
+                      </select>
+                    </div>
+                    <div class="flex justify-center items-center  bg-white border w-fit">
+                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                        <img class="w-2 sm:w-4" src="icons/align-left-solid.svg" alt="b-solid">
+                      </div>
+                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                        <img class="w-2 sm:w-4" src="icons/align-center-solid.svg" alt="i-solid">
+                      </div>
+                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                        <img class="w-2 sm:w-4" src="icons/align-right-solid.svg" alt="u-solid">
+                      </div>
+                      <div class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
+                        <img class="w-2 sm:w-4" src="icons/align-justify-solid.svg" alt="u-solid">
+                      </div>
+                    </div>
+                    <div class="flex border w-fit">
+                      <h4 class="text-xs sm:text-base font-bold text-[#810808] px-1">Ab</h4>
+                      <input class="h-full" type="color" id="head" name="head"
+                       value="#810808">
+                    </div>
+                  </div>
                 </div>
                 <div>
                     <textarea class="w-full rounded-b-md" name="" id="" cols="30" rows="10"></textarea>
