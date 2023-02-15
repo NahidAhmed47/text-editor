@@ -24,83 +24,244 @@
       </h1>
     </header>
     <main>
-      <section class="max-w-4xl sm:mx-auto bg-stone-100 rounded-lg drop-shadow-md p-3 sm:p-10">
+      <section
+        class="max-w-4xl sm:mx-auto bg-stone-100 rounded-lg drop-shadow-md p-3 sm:px-10 sm:pt-10"
+      >
         <h2 class="text-1xl sm:text-2xl font-semibold">Title:</h2>
-        <input id="title-input" type="text" placeholder="Type here" class="input input-bordered input-secondary w-full my-1 sm:my-3" />
+        <input
+          id="title-input"
+          type="text"
+          placeholder="Type here your file title"
+          class="h-10 px-3 py-1 w-full my-1 sm:my-3 rounded-md outline-none border border-[rgb(240,0,184)]"
+        />
         <!-- Content section -->
         <section>
-            <h2 class="text-1xl sm:text-2xl font-semibold py-1 sm:py-3">Content:</h2>
+          <h2 class="text-1xl sm:text-2xl font-semibold py-1 sm:py-3">
+            Content:
+          </h2>
+          <div>
+            <div
+              class="w-full bg-stone-200 rounded-t pl-1 sm:pl-2 py-1 flex gap-1 sm:gap-4"
+            >
+              <a href="#"
+                ><p
+                  class="text-xs sm:text-base text-black mr-1 hover:text-gray-600"
+                >
+                  File
+                </p></a
+              >
+              <a href="#"
+                ><p
+                  class="text-xs sm:text-base text-black mr-1 hover:text-gray-600"
+                >
+                  Edit
+                </p></a
+              >
+              <a href="#"
+                ><p
+                  class="text-xs sm:text-base text-black mr-1 hover:text-gray-600"
+                >
+                  View
+                </p></a
+              >
+              <a href="#"
+                ><p
+                  class="text-xs sm:text-base text-black mr-1 hover:text-gray-600"
+                >
+                  Insert
+                </p></a
+              >
+              <a href="#"
+                ><p
+                  class="text-xs sm:text-base text-black mr-1 hover:text-gray-600"
+                >
+                  Format
+                </p></a
+              >
+              <a href="#"
+                ><p
+                  class="text-xs sm:text-base text-black mr-1 hover:text-gray-600"
+                >
+                  Tools
+                </p></a
+              >
+            </div>
+            <!-- Editor div -->
             <div>
-                <div class=" w-full bg-stone-200 rounded-t pl-1 sm:pl-2 py-1 flex gap-1 sm:gap-4">
-                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">File</p></a>
-                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">Edit</p></a>
-                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">View</p></a>
-                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">Insert</p></a>
-                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">Format</p></a>
-                  <a href="#"><p class="text-xs sm:text-base text-black mr-1 hover:text-gray-600">Tools</p></a>
-                </div>
-                <!-- Editor div -->
-                <div>
-                  <div class="p-1 flex flex-wrap gap-1 sm:gap-3">
-                    <div class="flex justify-center items-center flex-wrap  bg-white  border w-fit">
-                      <div id="bold-text" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
-                        <img class="w-2 sm:w-3" src="icons/b-solid.svg" alt="b-solid">
-                      </div>
-                      <div id="italic-text" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
-                        <img class="w-2 sm:w-3" src="icons/italic-solid.svg" alt="i-solid">
-                      </div>
-                      <div id="underline-text" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
-                        <img class="w-2 sm:w-4" src="icons/underline-solid.svg" alt="u-solid">
-                      </div>
-                    </div>
-                    <div class="border w-fit">
-                      <input class="h-full pl-1 outline-none sm:w-14 text-xs sm:text-base  font-semibold" type="number" name="" id="text-size" min="10" placeholder="10px">
-                    </div>
-                    <div class="border w-fit ">
-                      <select id="" class="h-full px-0 sm:px-1 text-xs sm:text-base font-semibold">
-                        <option value="">Normal font</option>
-                        <option value="dog" id="times-roman">Times New Roman</option>
-                        <option value="cat">Cat</option>
-                        <option value="hamster">Hamster</option>
-                        <option value="parrot">Parrot</option>
-                        <option value="spider">Spider</option>
-                        <option value="goldfish">Goldfish</option>
-                      </select>
-                    </div>
-                    <div class="flex justify-center items-center  bg-white border w-fit">
-                      <div id="align-left" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
-                        <img class="w-2 sm:w-4" src="icons/align-left-solid.svg" alt="b-solid">
-                      </div>
-                      <div id="align-center" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
-                        <img class="w-2 sm:w-4" src="icons/align-center-solid.svg" alt="i-solid">
-                      </div>
-                      <div id="align-right" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
-                        <img class="w-2 sm:w-4" src="icons/align-right-solid.svg" alt="u-solid">
-                      </div>
-                      <div id="align-justify" class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500">
-                        <img class="w-2 sm:w-4" src="icons/align-justify-solid.svg" alt="u-solid">
-                      </div>
-                    </div>
-                    <div class="flex border w-fit ">
-                      <h4 id="ab" class="text-xs sm:text-base font-bold text-[#810808] px-1">Ab</h4>
-                      <input class="h-full" type="color" id="text-color" name="head"
-                       value="#810808">
-                    </div>
+              <div class="p-1 flex flex-wrap gap-1 sm:gap-3">
+                <div
+                  class="flex justify-center items-center flex-wrap bg-white border w-fit"
+                >
+                  <div
+                    id="reload"
+                    class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500"
+                    onClick="window.location.reload()"
+                  >
+                    <img
+                      class="w-3 sm:w-5"
+                      src="icons/rotate-left-solid.svg"
+                      alt="b-solid"
+                    />
                   </div>
                 </div>
-                <div>
-                    <textarea class="w-full rounded-b-md p-1 sm:px-2 sm:pt-1 outline-none	min-h-[200px]" name="" id="text-area" cols="30" rows="1"></textarea>
+                <div
+                  class="flex justify-center items-center flex-wrap bg-white border w-fit"
+                >
+                  <div
+                    id="bold-text"
+                    class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500"
+                  >
+                    <img
+                      class="w-2 sm:w-3"
+                      src="icons/b-solid.svg"
+                      alt="b-solid"
+                    />
+                  </div>
+                  <div
+                    id="italic-text"
+                    class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500"
+                  >
+                    <img
+                      class="w-2 sm:w-3"
+                      src="icons/italic-solid.svg"
+                      alt="i-solid"
+                    />
+                  </div>
+                  <div
+                    id="underline-text"
+                    class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500"
+                  >
+                    <img
+                      class="w-2 sm:w-4"
+                      src="icons/underline-solid.svg"
+                      alt="u-solid"
+                    />
+                  </div>
                 </div>
+                <div class="border w-fit">
+                  <input
+                    class="h-full w-10 pl-1 outline-none sm:w-14 text-xs sm:text-base font-semibold"
+                    type="number"
+                    name=""
+                    id="text-size"
+                    min="10"
+                    placeholder="10px"
+                  />
+                </div>
+                <div class="border w-fit">
+                  <select
+                    id=""
+                    class="h-full px-0 sm:px-1 text-xs sm:text-base font-semibold"
+                  >
+                    <option value="">Normal font</option>
+                    <option value="dog" id="times-roman">font 1</option>
+                    <option value="cat">font 2</option>
+                    <option value="hamster">font 3</option>
+                    <option value="parrot">font 4</option>
+                    <option value="spider">font 5</option>
+                    <option value="goldfish">font 6</option>
+                  </select>
+                </div>
+                <div
+                  class="flex justify-center items-center bg-white border w-fit"
+                >
+                  <div
+                    id="align-left"
+                    class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500"
+                  >
+                    <img
+                      class="w-2 sm:w-4"
+                      src="icons/align-left-solid.svg"
+                      alt="b-solid"
+                    />
+                  </div>
+                  <div
+                    id="align-center"
+                    class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500"
+                  >
+                    <img
+                      class="w-2 sm:w-4"
+                      src="icons/align-center-solid.svg"
+                      alt="i-solid"
+                    />
+                  </div>
+                  <div
+                    id="align-right"
+                    class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500"
+                  >
+                    <img
+                      class="w-2 sm:w-4"
+                      src="icons/align-right-solid.svg"
+                      alt="u-solid"
+                    />
+                  </div>
+                  <div
+                    id="align-justify"
+                    class="pr-1 sm:pr-2 px-1 sm:px-2 py-1 hover:bg-gray-500"
+                  >
+                    <img
+                      class="w-2 sm:w-4"
+                      src="icons/align-justify-solid.svg"
+                      alt="u-solid"
+                    />
+                  </div>
+                </div>
+                <div class="flex border w-fit">
+                  <h4
+                    id="ab"
+                    class="text-xs sm:text-base font-bold text-[#810808] px-1"
+                  >
+                    Ab
+                  </h4>
+                  <input
+                    class="h-full"
+                    type="color"
+                    id="text-color"
+                    name="head"
+                    value="#810808"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="flex justify-center sm:justify-start mt-3 sm:mt-1">
-              <button id="btn-copy" class="text-xs  sm:text-1xl font-bold py-1 sm:py-1 px-2 sm:px-5 bg-[rgb(240,0,184)] rounded text-white hover:bg-gray-500">Copy</button>
+            <div>
+              <textarea
+                class="w-full rounded-b-md p-1 sm:px-2 sm:pt-1 outline-none min-h-[200px]"
+                name=""
+                id="text-area"
+                cols="30"
+                rows="1"
+                placeholder="Write something here..."
+              ></textarea>
             </div>
+          </div>
+          <div class="flex justify-center sm:justify-start mt-3 sm:mt-1">
+            <!-- The button to open modal -->
+            <label for="my-modal" id="btn-save" class="text-xs sm:text-1xl font-bold py-1 sm:py-1 px-2 sm:px-5 bg-[rgb(240,0,184)] rounded text-white hover:bg-gray-500">Save</label>
+            <input type="checkbox" id="my-modal" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box">
+                <h3 id="modal-title" class="font-bold text-lg">
+                  You have no title!
+                </h3>
+                <p id="modal-text" class="">
+                  Hello.
+                </p>
+                <div class="modal-action">
+                  <label for="my-modal" class="text-xs sm:text-1xl font-bold py-1 sm:py-1 px-2 sm:px-5 bg-[rgb(240,0,184)] rounded text-white hover:bg-gray-500">Copy</label>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
+        <p class="text-center text-xs mt-5 sm:mt-0" >&copy; All rights reserved by <span class="font-semibold sm:font-bold">@Nahid_Ahmed</span> 2023</p>
       </section>
     </main>
-
+    <footer>
+      
+    </footer>
     <!-- JS file link -->
     <script src="js/utilities.js"></script>
+    <script src="js/text-copy.js"></script>
     <script src="js/b-i-u-edit.js"></script>
     <script src="js/text-size.js"></script>
     <script src="js/font-family.js"></script>
