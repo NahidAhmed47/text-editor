@@ -20,3 +20,11 @@ document.getElementById('underline-text').addEventListener('click', function(){
         textAreaField().style.textDecoration = 'underline';
     }
 })
+// Uppercase and lowercase
+document.getElementById('uppercase-lowercase').addEventListener('click', function(){
+    if (textAreaField().style.textTransform === "uppercase") {
+        textAreaField().style.textTransform = "lowercase";
+    } else {
+        textAreaField().style.textTransform = 'uppercase';
+    }
+})
